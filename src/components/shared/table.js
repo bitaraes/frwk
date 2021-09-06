@@ -65,6 +65,7 @@ export default function Table({ columns, getData, title }) {
 										onChange={(e) => {
 											setItensPage(e.target.value);
 										}}
+										className="itens-quantity-filter"
 									>
 										<option value="5">5</option>
 										<option value="25">25</option>
@@ -76,14 +77,15 @@ export default function Table({ columns, getData, title }) {
 							</div>
 							<div className="search-box-item">
 								<div className="itens-filter">
-									<label>Pesquisar: </label>
 									<input
 										type="search"
 										onChange={(e) =>
 											setFilter(e.target.value)
 										}
 										className="table-search"
+										placeholder="Pesquisar"
 									></input>
+									<BsSearch />
 								</div>
 							</div>
 						</div>
@@ -100,8 +102,8 @@ export default function Table({ columns, getData, title }) {
 											}
 										>
 											{column.title}
-											<AiOutlineArrowDown />
-											<AiOutlineArrowUp />
+											<AiOutlineArrowDown className="asc-desc-icons" />
+											<AiOutlineArrowUp className="asc-desc-icons" />
 										</th>
 									))}
 								</tr>

@@ -164,11 +164,28 @@ header {
 	opacity: 1;
 }
 
-.table-search {
-	width: 50%;
+.itens-quantity-filter {
+	border-radius: 1em;
+	padding: 0.3em;
+	outline: none;
 }
 
+.table-search {
+	border-radius: 15px;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border: none;
+}
+.asc-desc-icons {
+	float: right;
+}
 .itens-filter {
+	padding: 0.3em;
+	display: flex;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 1em;
 	text-align: right;
 }
 
