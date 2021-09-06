@@ -164,6 +164,49 @@ header {
 	opacity: 1;
 }
 
+.table-search {
+	width: 50%;
+}
+
+.itens-filter {
+	text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+	header,
+	#header-container {
+		flex-direction: column;
+	}
+
+	.data-table {
+		overflow: scroll;
+	}
+	.data-table .search-box {
+		flex-direction: column;
+	}
+	.itens-filter {
+		margin-block: 0.8rem;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	.header-nav ul {
+		padding: 0;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.header-nav ul li {
+		padding: 0.3rem;
+	}
+
+	#logo {
+		display: none;
+	}
+}
+
 /*-------Botões--------*/
 #reload button {
 	background: #5f3473;
@@ -184,8 +227,10 @@ header {
 	color: #5f3473;
 }
 
+/*-----Rodapé------*/
+
 .hidden-footer {
-	height: 6rem;
+	height: 2.7rem;
 }
 
 footer {

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineArrowDown, AiOutlineArrowUp } from "react-icons/ai";
+import { BsSearch } from "react-icons/bs";
 
 import Container from "./container";
 import Content from "./content";
@@ -81,6 +82,7 @@ export default function Table({ columns, getData, title }) {
 										onChange={(e) =>
 											setFilter(e.target.value)
 										}
+										className="table-search"
 									></input>
 								</div>
 							</div>
