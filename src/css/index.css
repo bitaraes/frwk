@@ -65,6 +65,10 @@ header {
 	width: 100%;
 }
 
+.mobile-menu {
+	display: none;
+}
+
 .container {
 	margin: 0 auto;
 	width: 85%;
@@ -81,9 +85,11 @@ header {
 .home-menu {
 	align-items: center;
 	display: flex;
+	text-align: center;
 	height: 280px;
 	width: 100%;
 }
+
 .home-menu-item {
 	align-items: center;
 	background-color: #ececec;
@@ -180,6 +186,7 @@ header {
 .asc-desc-icons {
 	float: right;
 }
+
 .itens-filter {
 	padding: 0.3em;
 	display: flex;
@@ -187,41 +194,6 @@ header {
 	border: 1px solid;
 	border-radius: 1em;
 	text-align: right;
-}
-
-@media screen and (max-width: 600px) {
-	header,
-	#header-container {
-		flex-direction: column;
-	}
-
-	.data-table {
-		overflow: scroll;
-	}
-	.data-table .search-box {
-		flex-direction: column;
-	}
-	.itens-filter {
-		margin-block: 0.8rem;
-		text-align: center;
-	}
-}
-
-@media screen and (max-width: 490px) {
-	.header-nav ul {
-		padding: 0;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-
-	.header-nav ul li {
-		padding: 0.3rem;
-	}
-
-	#logo {
-		display: none;
-	}
 }
 
 /*-------Botões--------*/
@@ -261,4 +233,41 @@ footer {
 	min-height: 60px;
 	position: fixed;
 	width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+	.home {
+		height: auto;
+		margin-bottom: 500px;
+	}
+
+	.home-menu {
+		flex-direction: column;
+		margin-top: 0;
+		width: 300px;
+	}
+	.home-menu-item p {
+		margin: 0;
+	}
+	.home-menu-item {
+		margin: 1em;
+	}
+	.header-nav {
+		display: none;
+	}
+
+	.mobile-menu {
+		display: flex;
+	}
+
+	.data-table {
+		overflow: scroll;
+	}
+	.data-table .search-box {
+		flex-direction: column;
+	}
+	.itens-filter {
+		margin-block: 0.8rem;
+		text-align: center;
+	}
 }

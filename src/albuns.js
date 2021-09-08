@@ -1,3 +1,4 @@
+import React from "react";
 import { getAlbuns } from "./services/api";
 import Table from "./components/shared/table";
 
