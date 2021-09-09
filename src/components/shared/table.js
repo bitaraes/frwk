@@ -109,8 +109,8 @@ export default function Table({ columns, getData, title }) {
 								</tr>
 							</thead>
 							<tbody>
-								{data.map((atual) => (
-									<tr key={atual.id}>
+								{data.map((atual, index) => (
+									<tr key={index}>
 										{columns.map((column) => (
 											<td
 												key={
