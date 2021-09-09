@@ -5,7 +5,7 @@ export default function Pagefooter() {
 		<>
 			<div className="hidden-footer"></div>
 			<footer>
-				<p> &copy; 2021 Framework Padawans </p>
+				<p> &copy; 2021 FRWK</p>
 			</footer>
 		</>
 	);
